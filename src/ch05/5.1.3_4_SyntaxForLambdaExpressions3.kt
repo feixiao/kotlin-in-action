@@ -7,4 +7,5 @@ fun main(args: Array<String>) {
     val names = people.joinToString(separator = " ",
                           transform = { p: Person -> p.name })
     println(names)
+    // Alice Bob
 }

@@ -7,5 +7,9 @@ fun main(args: Array<String>) {
                        Book("Mort", listOf("Terry Pratchett")),
                        Book("Good Omens", listOf("Terry Pratchett",
                                                  "Neil Gaiman")))
+
+                                                 
     println(books.flatMap { it.authors }.toSet())
+
+    // [Jasper Fforde, Terry Pratchett, Neil Gaiman]
 }
