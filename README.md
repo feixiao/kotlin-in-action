@@ -16,5 +16,5 @@ kotlinc -help
 #-include-runtime 选项通过在其中包含 Kotlin 运行时库，使得生成的 .jar 文件中自包含运行时库且可运行。
 
 kotlinc hello.kt -include-runtime -d hello.jar
-
+java -jar hello.jar
 ```
