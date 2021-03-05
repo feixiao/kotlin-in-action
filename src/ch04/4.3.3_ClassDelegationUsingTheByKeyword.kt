@@ -2,6 +2,8 @@ package ch04.ex3_3_ClassDelegationUsingTheByKeyword
 
 import java.util.HashSet
 
+// CountingSet 内部的实现委托给HashSet<T>
+// 不需要定义内部变量通by指派了
 class CountingSet<T>(
         val innerSet: MutableCollection<T> = HashSet<T>()
 ) : MutableCollection<T> by innerSet {
