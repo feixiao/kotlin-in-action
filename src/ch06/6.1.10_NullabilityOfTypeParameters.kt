@@ -6,4 +6,5 @@ fun <T> printHashCode(t: T) {
 
 fun main(args: Array<String>) {
     printHashCode(null)
+    // null
 }

@@ -1,6 +1,8 @@
 package ch06.ex1_3_1_SafeCallOperator
 
 fun printAllCaps(s: String?) {
+    //  s== nil => null
+    //  s!= nil => s.toUpperCase()
     val allCaps: String? = s?.toUpperCase()
     println(allCaps)
 }

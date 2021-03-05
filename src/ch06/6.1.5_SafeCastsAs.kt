@@ -17,4 +17,7 @@ fun main(args: Array<String>) {
     val p2 = Person("Dmitry", "Jemerov")
     println(p1 == p2)
     println(p1.equals(42))
+
+   // true
+   // false
 }
