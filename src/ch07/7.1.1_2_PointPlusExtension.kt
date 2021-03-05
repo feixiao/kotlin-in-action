@@ -2,6 +2,7 @@ package ch07.PointPlusExtension
 
 data class Point(val x: Int, val y: Int)
 
+// 扩展方式进行运算符重载
 operator fun Point.plus(other: Point): Point {
     return Point(x + other.x, y + other.y)
 }

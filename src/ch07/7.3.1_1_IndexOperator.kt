@@ -2,6 +2,7 @@ package ch07.ex3_1_1_IndexOperator
 
 data class Point(val x: Int, val y: Int)
 
+// 重载索引
 operator fun Point.get(index: Int): Int {
     return when(index) {
         0 -> x

@@ -1,6 +1,8 @@
 package ch07.PointPlusMember
 
 data class Point(val x: Int, val y: Int) {
+
+    // 重载运算符
     operator fun plus(other: Point): Point {
         return Point(x + other.x, y + other.y)
     }
