@@ -1,15 +1,20 @@
-[![official JetBrains project](http://jb.gg/badges/official-plastic.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)
+## Kotlin 实战源码
 
-This project contains the code samples from the "Kotlin in Action" book (https://www.manning.com/books/kotlin-in-action).
-To build the project import it as Gradle project.
+### 安装 kotlin 工具包
 
-Each of the samples is a self-contained file, and most of them contain a "main"
-function. To run a sample, simply open the file in the IDE, right-click the
-"main" function and select the "Run" or "Debug" option from the context menu.
+#### Ubuntu 20.04
 
-Some of the samples do not contain a "main" function, and are provided only as
-a reference or demonstration of a concept. You can simply study them, or you
-can incorporate them into your own examples or exercises.
+```shell
+sudo snap install --classic kotlin
+kotlinc -help
+```
 
-The numbering of the sample files corresponds to the order in which they
-appear in the book.
+### 编译和运行
+
+```
+#-d 选项表示生成的类文件的输出路径，可以是目录，也可以是一个 .jar 文件。
+#-include-runtime 选项通过在其中包含 Kotlin 运行时库，使得生成的 .jar 文件中自包含运行时库且可运行。
+
+kotlinc hello.kt -include-runtime -d hello.jar
+
+```
