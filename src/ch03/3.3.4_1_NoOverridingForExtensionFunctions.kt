@@ -11,4 +11,5 @@ class Button: View() {
 fun main(args: Array<String>) {
     val view: View = Button()
     view.click()
+    // 输出为"Button clicked"
 }

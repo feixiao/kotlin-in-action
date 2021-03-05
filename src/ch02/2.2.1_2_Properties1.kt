@@ -1,8 +1,8 @@
 package ch02.person
 
 class Person(
-    val name: String,
-    var isMarried: Boolean
+    val name: String,           // val 常量
+    var isMarried: Boolean      // var 变量
 )
 
 fun main(args: Array<String>) {

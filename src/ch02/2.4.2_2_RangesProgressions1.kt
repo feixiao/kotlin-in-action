@@ -8,6 +8,7 @@ fun fizzBuzz(i: Int) = when {
 }
 
 fun main(args: Array<String>) {
+    // step 是步长，每次减2
     for (i in 100 downTo 1 step 2) {
         print(fizzBuzz(i))
     }
