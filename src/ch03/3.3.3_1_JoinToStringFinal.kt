@@ -1,5 +1,6 @@
 package ch03.JoinToStringFinal
 
+// 为Collection<T>申明扩展函数
 fun <T> Collection<T>.joinToString(
         separator: String = ", ",
         prefix: String = "",
@@ -19,5 +20,10 @@ fun <T> Collection<T>.joinToString(
 fun main(args: Array<String>) {
     val list = listOf(1, 2, 3)
     println(list.joinToString(separator = "; ",
+          prefix = "(", postfix = ")"))
+
+
+    val arrayList = arrayListOf(1,2,3)
+    println(arrayList.joinToString(separator = "; ",
           prefix = "(", postfix = ")"))
 }
