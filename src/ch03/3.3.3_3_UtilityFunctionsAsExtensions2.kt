@@ -16,6 +16,7 @@ fun <T> Collection<T>.joinToString(
     return result.toString()
 }
 
+// 只能由字符串的集合来触发
 fun Collection<String>.join(
         separator: String = ", ",
         prefix: String = "",

@@ -5,6 +5,7 @@ open class View {
 }
 
 class Button: View() {
+    // 重写扩展函数很常见，但是不能重写扩展函数
     override fun click() = println("Button clicked")
 }
 
