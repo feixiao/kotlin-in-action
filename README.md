@@ -8,6 +8,10 @@
 sudo snap install --classic kotlin
 kotlinc -help
 ```
+#### OSX
+```shell
+brew install kotlin
+```
 
 ### 编译和运行
 ##### PlayGroud
