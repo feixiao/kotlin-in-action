@@ -5,8 +5,10 @@ enum class Color {
     RED, ORANGE, YELLOW, GREEN, BLUE, INDIGO, VIOLET
 }
 
-fun getMnemonic(color: Color) =
+// 函数省略了返回类型，有点恶心...
+fun getMnemonic(color: Color) =     // 直接返回一个when的表达式
     when (color) {
+        // 类型跟枚举变量相同就返回对应的颜色
         Color.RED -> "Richard"
         Color.ORANGE -> "Of"
         Color.YELLOW -> "York"

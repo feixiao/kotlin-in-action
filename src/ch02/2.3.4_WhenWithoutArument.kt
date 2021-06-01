@@ -4,6 +4,7 @@ import ch02.colors.Color
 import ch02.colors.Color.*
 
 fun mixOptimized(c1: Color, c2: Color) =
+    // 不带参数的when
     when {
         (c1 == RED && c2 == YELLOW) ||
         (c1 == YELLOW && c2 == RED) ->

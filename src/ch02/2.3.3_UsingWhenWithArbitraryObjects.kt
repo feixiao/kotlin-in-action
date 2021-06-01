@@ -8,7 +8,7 @@ fun mix(c1: Color, c2: Color) =
             setOf(RED, YELLOW) -> ORANGE
             setOf(YELLOW, BLUE) -> GREEN
             setOf(BLUE, VIOLET) -> INDIGO
-            else -> throw Exception("Dirty color")
+            else -> throw Exception("Dirty color")  // 没有任何颜色匹配的情况
         }
 
 fun main(args: Array<String>) {

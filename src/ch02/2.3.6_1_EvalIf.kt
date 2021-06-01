@@ -5,6 +5,8 @@ class Num(val value: Int) : Expr
 class Sum(val left: Expr, val right: Expr) : Expr
 
 fun eval(e: Expr): Int =
+
+    // 有返回值的if表达式
     if (e is Num) {
         e.value
     } else if (e is Sum) {

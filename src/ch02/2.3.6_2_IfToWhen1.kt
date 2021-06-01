@@ -6,6 +6,7 @@ class Sum(val left: Expr, val right: Expr) : Expr
 
 fun eval(e: Expr): Int =
     when (e) {
+        // 判断类型
         is Num ->
             e.value
         is Sum ->
