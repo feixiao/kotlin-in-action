@@ -8,6 +8,7 @@ fun fizzBuzz(i: Int) = when {
 }
 
 fun main(args: Array<String>) {
+    // 在整数区间1..100中间迭代
     for (i in 1..100) {
         print(fizzBuzz(i))
     }
