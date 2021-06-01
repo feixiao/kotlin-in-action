@@ -1,6 +1,6 @@
 package geometry.shapes
 
-import java.util.Random
+import java.util.Random  // 导入外部的包和类
 
 class Rectangle(val height: Int, val width: Int) {
     val isSquare: Boolean

@@ -1,5 +1,6 @@
 package ch02.ex3_2_1_WhenEnums
 
+// 枚举类
 enum class Color {
     RED, ORANGE, YELLOW, GREEN, BLUE, INDIGO, VIOLET
 }
