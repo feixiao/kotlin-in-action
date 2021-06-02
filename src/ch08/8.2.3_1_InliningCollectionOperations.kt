@@ -5,5 +5,7 @@ data class Person(val name: String, val age: Int)
 val people = listOf(Person("Alice", 29), Person("Bob", 31))
 
 fun main(args: Array<String>) {
+
+    // 使用lambda过滤一个集合
     println(people.filter { it.age < 30 })
 }
