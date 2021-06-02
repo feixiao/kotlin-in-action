@@ -3,12 +3,12 @@ package ch03.ValidateUser
 class User(val id: Int, val name: String, val address: String)
 
 fun saveUser(user: User) {
-    if (user.name.isEmpty()) {
+    if (user.name.isEmpty()) {             // 重复的字段检查
         throw IllegalArgumentException(
             "Can't save user ${user.id}: empty Name")
     }
 
-    if (user.address.isEmpty()) {
+    if (user.address.isEmpty()) {           // 重复的字段检查
         throw IllegalArgumentException(
             "Can't save user ${user.id}: empty Address")
     }
@@ -17,5 +17,5 @@ fun saveUser(user: User) {
 }
 
 fun main(args: Array<String>) {
-    saveUser(User(1, "", ""))
+    saveUser(User(1, "", ""))   
 }

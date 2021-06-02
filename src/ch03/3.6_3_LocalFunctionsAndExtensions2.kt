@@ -6,7 +6,7 @@ fun saveUser(user: User) {
     fun validate(value: String, fieldName: String) {
         if (value.isEmpty()) {
             throw IllegalArgumentException(
-                "Can't save user ${user.id}: " +
+                "Can't save user ${user.id}: " +            // 局部函数调用外层函数变量
                     "empty $fieldName")
         }
     }

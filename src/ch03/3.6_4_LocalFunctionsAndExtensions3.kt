@@ -2,6 +2,7 @@ package ch03.ex6_4_LocalFunctionsAndExtensions3
 
 class User(val id: Int, val name: String, val address: String)
 
+// 提前逻辑到扩展函数
 fun User.validateBeforeSave() {
     fun validate(value: String, fieldName: String) {
         if (value.isEmpty()) {

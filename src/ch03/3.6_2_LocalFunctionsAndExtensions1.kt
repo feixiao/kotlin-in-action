@@ -4,6 +4,7 @@ class User(val id: Int, val name: String, val address: String)
 
 fun saveUser(user: User) {
 
+    // 申明局部函数来验证所有字段
     fun validate(user: User,
                  value: String,
                  fieldName: String) {
@@ -13,6 +14,7 @@ fun saveUser(user: User) {
         }
     }
 
+    // 函数调用验证
     validate(user, user.name, "Name")
     validate(user, user.address, "Address")
 
