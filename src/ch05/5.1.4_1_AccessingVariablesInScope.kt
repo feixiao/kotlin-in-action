@@ -2,7 +2,7 @@ package ch05.ex1_4_1_AccessingVariablesInScope
 
 fun printMessagesWithPrefix(messages: Collection<String>, prefix: String) {
     messages.forEach {
-        println("$prefix $it")
+        println("$prefix $it")   // 接收lamda作为实参，指定对每个元素操作
     }
 }
 

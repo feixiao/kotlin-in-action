@@ -1,6 +1,6 @@
 package ch05.ex5_2_1_TheApplyFunction
 
-// apply 结果会给接收对象
+// apply和with函数一模一样，会返回作为实参传递给他的对象
 fun alphabet() = StringBuilder().apply {
     for (letter in 'A'..'Z') {
         append(letter)

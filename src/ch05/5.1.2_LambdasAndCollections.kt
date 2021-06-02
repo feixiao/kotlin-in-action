@@ -16,5 +16,10 @@ fun findTheOldest(people: List<Person>) {
 
 fun main(args: Array<String>) {
     val people = listOf(Person("Alice", 29), Person("Bob", 31))
+
+    // 常规方法
     findTheOldest(people)
+
+    // 用lamda在集合里面搜索
+    println(people.maxBy{ it.age})
 }

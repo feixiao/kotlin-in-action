@@ -8,7 +8,9 @@ fun main(args: Array<String>) {
                        Book("Good Omens", listOf("Terry Pratchett",
                                                  "Neil Gaiman")))
 
-                                                 
+                     
+    // flatMap做两件事情：
+    //  根据实参给定的函数对集合的每个元素进行变换,然后把多个列表合并为一个列表                            
     println(books.flatMap { it.authors }.toSet())
 
     // [Jasper Fforde, Terry Pratchett, Neil Gaiman]
