@@ -16,6 +16,7 @@ val log = listOf(
     SiteVisit("/", 16.3, OS.ANDROID)
 )
 
+// 用一个复杂的硬编码函数分析站点访问数据
 val averageMobileDuration = log
     .filter { it.os in setOf(OS.IOS, OS.ANDROID) }
     .map(SiteVisit::duration)

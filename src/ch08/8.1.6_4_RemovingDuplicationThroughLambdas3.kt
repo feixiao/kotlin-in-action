@@ -16,6 +16,14 @@ val log = listOf(
     SiteVisit("/", 16.3, OS.ANDROID)
 )
 
+
+// val averageMobileDuration = log
+//     .filter { it.os in setOf(OS.IOS, OS.ANDROID) }
+//     .map(SiteVisit::duration)
+//     .average()
+
+
+// 传入predicate函数
 fun List<SiteVisit>.averageDurationFor(predicate: (SiteVisit) -> Boolean) =
         filter(predicate).map(SiteVisit::duration).average()
 

@@ -4,7 +4,7 @@ fun <T> Collection<T>.joinToString(
         separator: String = ", ",
         prefix: String = "",
         postfix: String = "",
-        transform: (T) -> String = { it.toString() }
+        transform: (T) -> String = { it.toString() }    // transform 默认函数是toString
 ): String {
     val result = StringBuilder(prefix)
 

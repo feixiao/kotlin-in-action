@@ -16,6 +16,12 @@ val log = listOf(
     SiteVisit("/", 16.3, OS.ANDROID)
 )
 
+// val averageWindowsDuration = log
+//     .filter { it.os == OS.WINDOWS }
+//     .map(SiteVisit::duration)
+//     .average()
+
+// 扩展函数方式替换上面的内容
 fun List<SiteVisit>.averageDurationFor(os: OS) =
         filter { it.os == os }.map(SiteVisit::duration).average()
 
