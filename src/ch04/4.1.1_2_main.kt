@@ -4,6 +4,7 @@ class Button : Clickable, Focusable {
     override fun click() = println("I was clicked")
 
     override fun showOff() {
+        // 集成成员有不止一个的实现，必须显示实现
         super<Clickable>.showOff()
         super<Focusable>.showOff()
     }
@@ -11,7 +12,7 @@ class Button : Clickable, Focusable {
 
 interface Clickable {
     fun click()
-    fun showOff() = println("I'm clickable!")
+    fun showOff() = println("I'm clickable!")       // 带默认实现的方法
 }
 
 interface Focusable {

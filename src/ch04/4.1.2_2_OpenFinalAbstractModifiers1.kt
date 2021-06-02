@@ -6,5 +6,5 @@ interface Clickable {
 }
 
 open class RichButton : Clickable {
-    final override fun click() {}
+    final override fun click() {}            // 禁止重写
 }

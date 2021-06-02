@@ -6,7 +6,7 @@ class User(val name: String) {
             println("""
                 Address was changed for $name:
                 "$field" -> "$value".""".trimIndent())
-            field = value
+            field = value       //  支持更新字段的值
         }
 }
 

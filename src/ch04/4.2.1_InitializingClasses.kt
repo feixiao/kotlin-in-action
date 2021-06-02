@@ -1,5 +1,6 @@
 package ch04.ex2_1_InitializingClasses
 
+// 构造方法带默认值
 class User(val nickname: String,
            val isSubscribed: Boolean = true)
 
